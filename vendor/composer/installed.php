@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'ryantao/api-response',
-        'pretty_version' => 'dev-main',
-        'version' => 'dev-main',
-        'reference' => '6c0b06ffd709af3a0b6694d865cee95f509390da',
+        'pretty_version' => '1.0.0',
+        'version' => '1.0.0.0',
+        'reference' => null,
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -46,9 +46,9 @@
             'dev_requirement' => true,
         ),
         'ryantao/api-response' => array(
-            'pretty_version' => 'dev-main',
-            'version' => 'dev-main',
-            'reference' => '6c0b06ffd709af3a0b6694d865cee95f509390da',
+            'pretty_version' => '1.0.0',
+            'version' => '1.0.0.0',
+            'reference' => null,
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

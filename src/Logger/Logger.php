@@ -1,5 +1,7 @@
 <?php
 
+namespace Ryantao\Logger;
+
 use Ryantao\support\Log;
 
 /**
