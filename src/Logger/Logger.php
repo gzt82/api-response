@@ -23,8 +23,8 @@ class Logger
             $logChannel = Log::channel($name);
         } catch (Throwable $e) {
             if ($e->getMessage() === 'Undefined index: ' . $name) {
-                if (!in_array($name, config('log.channel', []), true)) {
-                    throw new InvalidArgumentException('请先在 config/log.php 配置中配置 channels');
+                if (!in_array($name, config('rlog', []), true)) {
+                    throw new InvalidArgumentException('请先在 config/rlog.php 配置中配置日志通道');
                 }
                 return;
             }
@@ -52,4 +52,3 @@ class Logger
     }
 }
 
-Logger::test("测试标题", ["a" => "a", "b" => "b", "c" => "c"]);

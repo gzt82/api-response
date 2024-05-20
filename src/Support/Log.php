@@ -49,7 +49,7 @@ class Log
     public static function channel(string $name = 'default'): Logger
     {
         if (!isset(static::$instance[$name])) {
-            $config = config('log', [])[$name];
+            $config = config('rlog', [])[$name];
             $handlers = self::handlers($config);
             $processors = self::processors($config);
             static::$instance[$name] = new Logger($name, $handlers, $processors);
