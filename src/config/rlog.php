@@ -12,7 +12,7 @@ return [
                 'class' => Monolog\Handler\RotatingFileHandler::class,
                 // handler类的构造函数参数
                 'constructor' => [
-                    env('RLOG_PATH') . '/runtime/rlog/.log',
+                    env('RLOG_PATH') . '/runtime/rlog/test.log',
                     30,
                     Monolog\Logger::DEBUG,
                 ],

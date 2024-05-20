@@ -17,16 +17,6 @@
   "require-dev": {
     "roave/security-advisories": "dev-latest"
   },
-  "scripts": {
-    "post-install-cmd": [
-      "cp -r ./vendor/ryantao/api-response/src/config/rlog.php ./config/rlog.php",
-      "cp -r ./vendor/ryantao/api-response/src/Logger/RLog.php ./extend/RLog.php"
-    ],
-    "post-update-cmd": [
-      "cp -r ./vendor/ryantao/api-response/src/config/rlog.php ./config/rlog.php",
-      "cp -r ./vendor/ryantao/api-response/src/extend/ ./extend/"
-    ]
-  },
   "autoload": {
     "psr-4": {
       "Ryantao\\": "src/"
