@@ -1,0 +1,31 @@
+{
+  "name": "ryantao/api-response",
+  "description": "快速简单的多通道记录日志",
+  "keywords": [
+    "log",
+    "logger",
+    "laravel",
+    "thinkphp",
+    "api"
+  ],
+  "license": "MIT",
+  "require": {
+    "php": ">=7.2.0",
+    "monolog/monolog": "2.9.0",
+    "ext-json": "*"
+  },
+  "require-dev": {
+    "roave/security-advisories": "dev-latest"
+  },
+  "autoload": {
+    "psr-4": {
+      "Ryantao\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Ryan",
+      "email": "11204356@qq.com"
+    }
+  ]
+}
