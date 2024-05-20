@@ -1,7 +1,6 @@
 {
   "name": "ryantao/api-response",
   "description": "快速简单的多通道记录日志",
-  "version": "1.0.0",
   "keywords": [
     "log",
     "logger",
