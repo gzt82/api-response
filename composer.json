@@ -24,7 +24,7 @@
     ],
     "post-update-cmd": [
       "cp -r ./vendor/ryantao/api-response/src/config/rlog.php ./config/rlog.php",
-      "cp -r ./vendor/ryantao/api-response/src/Logger/RLog.php ./extend/RLog.php"
+      "cp -r ./vendor/ryantao/api-response/src/extend/ ./extend/"
     ]
   },
   "autoload": {

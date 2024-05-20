@@ -4,9 +4,7 @@ namespace Ryantao\Logger;
 
 use Ryantao\support\Log;
 
-/**
- * @method static void test(string $title, $context = [], string $type = 'info')
- */
+
 class Logger
 {
     protected static $defaultLevel = 'info';
