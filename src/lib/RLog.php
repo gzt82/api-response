@@ -1,6 +1,6 @@
 <?php
 
-namespace extend;
+namespace lib;
 
 use Ryantao\Logger\Logger;
 
