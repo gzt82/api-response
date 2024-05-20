@@ -1,6 +1,7 @@
 {
   "name": "ryantao/api-response",
   "description": "快速简单的多通道记录日志",
+  "version": "1.0.0",
   "keywords": [
     "log",
     "logger",
@@ -11,7 +12,7 @@
   "license": "MIT",
   "require": {
     "php": ">=7.2.0",
-    "monolog/monolog": "2.9.0",
+    "monolog/monolog": "2.9.*",
     "ext-json": "*"
   },
   "require-dev": {
