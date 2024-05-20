@@ -3,37 +3,11 @@
 ### 修改ENV
     RLOG_PATH = 绝对路径/相对路径
 ### 日志配置
-config下修改rlog.php
-    <?php
-    
-    // +----------------------------------------------------------------------
-    // | 日志设置
-    // +----------------------------------------------------------------------
-    return [
-        'test' => [
-            // 处理默认通道的handler，可以设置多个
-            'handlers' => [
-                [
-                    // handler类的名字
-                    'class' => Monolog\Handler\RotatingFileHandler::class,
-                    // handler类的构造函数参数
-                    'constructor' => [
-                        env('RLOG_PATH') . '/runtime/rlog/.log',
-                        30,
-                        Monolog\Logger::DEBUG,
-                    ],
-                    // 格式相关
-                    'formatter' => [
-                        // 格式化处理类的名字
-                        'class' => Monolog\Formatter\LineFormatter::class,
-                        // 格式化处理类的构造函数参数
-                        'constructor' => [ null, 'Y-m-d H:i:s', true],
-                    ],
-                ]
-            ],
-        ]
-    ];
-    
+拷贝 config目录的rlog.php
+### 通道类
+拷贝 lib目录到项目的指定扩展目录
 ### 使用示例
     use Ryantao\Logger\Logger;
     Logger::test("hello",["a"=>"a","b"=>"b","c"=>"c","d"=>"d"]);
+# 强调
+不同的日志通道，需要在rlog.php 中额外配置，然后RLog.php中拷贝响应的静态方法
