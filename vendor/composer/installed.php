@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'ryantao/api-response',
-        'pretty_version' => '1.0.0',
-        'version' => '1.0.0.0',
-        'reference' => null,
+        'pretty_version' => 'dev-master',
+        'version' => 'dev-master',
+        'reference' => '1ff28b5e4b68798ca425b96bdeb15bf794645c20',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -11,9 +11,9 @@
     ),
     'versions' => array(
         'monolog/monolog' => array(
-            'pretty_version' => '2.9.3',
-            'version' => '2.9.3.0',
-            'reference' => 'a30bfe2e142720dfa990d0a7e573997f5d884215',
+            'pretty_version' => '3.6.0',
+            'version' => '3.6.0.0',
+            'reference' => '4b18b21a5527a3d5ffdac2fd35d3ab25a9597654',
             'type' => 'library',
             'install_path' => __DIR__ . '/../monolog/monolog',
             'aliases' => array(),
@@ -31,13 +31,13 @@
         'psr/log-implementation' => array(
             'dev_requirement' => false,
             'provided' => array(
-                0 => '1.0.0 || 2.0.0 || 3.0.0',
+                0 => '3.0.0',
             ),
         ),
         'roave/security-advisories' => array(
             'pretty_version' => 'dev-latest',
             'version' => 'dev-latest',
-            'reference' => '5a190e68aef110a461c04c09b148660a377da4db',
+            'reference' => '7a1a6552ac2f0fd7131d2552be221f2dd6eb19fa',
             'type' => 'metapackage',
             'install_path' => null,
             'aliases' => array(
@@ -46,9 +46,9 @@
             'dev_requirement' => true,
         ),
         'ryantao/api-response' => array(
-            'pretty_version' => '1.0.0',
-            'version' => '1.0.0.0',
-            'reference' => null,
+            'pretty_version' => 'dev-master',
+            'version' => 'dev-master',
+            'reference' => '1ff28b5e4b68798ca425b96bdeb15bf794645c20',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
