@@ -23,11 +23,8 @@
     }
   },
   "scripts": {
-    "post-install-cmd": [
-      "php install.php"
-    ],
-    "post-update-cmd": [
-      "php install.php"
+    "post-autoload-dump": [
+      "Ryantao\\Install::warmCache"
     ]
   },
   "authors": [
