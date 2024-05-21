@@ -23,8 +23,11 @@
     }
   },
   "scripts": {
-    "post-autoload-dump": [
-      "Ryantao\\Install::warmCache"
+    "post-install-cmd": [
+      "Ryantao\\Install::installFiles"
+    ],
+    "post-update-cmd": [
+      "Ryantao\\Install::installFiles"
     ]
   },
   "authors": [

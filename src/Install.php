@@ -8,7 +8,7 @@ use RecursiveIteratorIterator;
 
 class Install
 {
-    public static function warmCache()
+    public static function installFiles()
     {
         $directories = [
             ['source' => __DIR__ . '\vendor\ryantao\api-response\install\config', 'target' => __DIR__ . '\config'],
