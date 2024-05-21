@@ -29,10 +29,10 @@ class Logger
             throw $e;
         }
         if ($arguments[0] === 'line') {
-            $line = str_repeat('=', 100);
+            $line = str_repeat('-', 100);
             $logChannel->log($level, $line);
         } else {
-            $logChannel->log($level, date('Y-m-d H:i:s') . " >>> " . $title . " >>> " . self::formatMessage($context));
+            $logChannel->log($level,$title . " >>> " . self::formatMessage($context));
         }
     }
 
