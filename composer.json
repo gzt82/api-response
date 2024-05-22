@@ -26,6 +26,9 @@
     "think": {
       "config": {
         "rlog": "src/install/config/rlog.php"
+      },
+      "app": {
+        "library": "src/install/Library"
       }
     }
   },
