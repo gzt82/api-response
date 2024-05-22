@@ -28,5 +28,5 @@ foreach ($directories as $directory) {
         }
     }
 
-    echo $directory['destination'];
+    echo $directory['description'];
 }
