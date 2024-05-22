@@ -1,6 +1,6 @@
 <?php
 
-namespace Ryantao\support;
+namespace Ryantao\Support;
 
 use Monolog\Formatter\FormatterInterface;
 use Monolog\Handler\FormattableHandlerInterface;

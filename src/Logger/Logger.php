@@ -2,7 +2,7 @@
 
 namespace Ryantao\Logger;
 
-use Ryantao\support\Log;
+use Ryantao\Support\Log;
 
 
 class Logger
@@ -32,7 +32,7 @@ class Logger
             $line = str_repeat('-', 100);
             $logChannel->log($level, $line);
         } else {
-            $logChannel->log($level,$title . " >>> " . self::formatMessage($context));
+            $logChannel->log($level, $title . " >>> " . self::formatMessage($context));
         }
     }
 
