@@ -1,7 +1,7 @@
 <?php
 $directories = [
-    ['source' => __DIR__ . '\vendor\ryantao\api-response\install\config', 'target' => __DIR__ . '\config'],
-    ['source' => __DIR__ . '\vendor\ryantao\api-response\install\library', 'target' => __DIR__ . '\app\Library'],
+    ['source' => './install/config', 'target' => '../../../config'],
+    ['source' => './install/library', 'target' => '../../../app\Library'],
 ];
 
 foreach ($directories as $directory) {
