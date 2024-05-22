@@ -1,7 +1,7 @@
 <?php
 $directories = [
-    ['source' => './install/config', 'target' => '../../../config'],
-    ['source' => './install/library', 'target' => '../../../app\Library'],
+    ['source' => __DIR__ . '/install/config', 'target' => __DIR__ . '/../../../config'],
+    ['source' => './install/library', 'target' => __DIR__ . '../../../app\Library'],
 ];
 
 foreach ($directories as $directory) {
