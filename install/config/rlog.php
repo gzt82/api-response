@@ -4,7 +4,7 @@
 // | 日志设置
 // +----------------------------------------------------------------------
 return [
-    'test' => [
+    'api' => [
         // 处理默认通道的handler，可以设置多个
         'handlers' => [
             [
@@ -12,7 +12,7 @@ return [
                 'class' => Monolog\Handler\RotatingFileHandler::class,
                 // handler类的构造函数参数
                 'constructor' => [
-                    env('RLOG_PATH') . '/runtime/rlog/test.log',
+                    env('RLOG_PATH') . '/runtime/rlog/api.log',
                     30,
                     Monolog\Logger::DEBUG,
                 ],
