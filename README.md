@@ -46,8 +46,8 @@ test的日志通道相关配置
 ### 使用示例
 ```
 use lib\RLog;
-Logger::test("hello",["a"=>"a","b"=>"b","c"=>"c","d"=>"d"]);
-Logger::test("line");
+Logger::test("hello",["a"=>"a","b"=>"b","c"=>"c","d"=>"d"],'info');    //日志类型：debug,info,notice,error,warning等
+Logger::test("line");    //分割线
 ```
 # 强调
 `不同的日志通道，需要在rlog.php 中额外配置，然后RLog.php中拷贝响应的静态方法`
