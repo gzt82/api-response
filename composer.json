@@ -18,9 +18,6 @@
     "roave/security-advisories": "dev-latest"
   },
   "autoload": {
-    "files": [
-      "install.php"
-    ],
     "psr-4": {
       "ryantao\\api-response\\": "src/"
     }
