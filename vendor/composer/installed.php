@@ -3,7 +3,7 @@
         'name' => 'ryantao/api-response',
         'pretty_version' => 'dev-master',
         'version' => 'dev-master',
-        'reference' => '94a34250f625d8640fd20e5e5bae3109192201e9',
+        'reference' => 'a5b6883d7d045931cc02904087fa5d4063bd57d6',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -48,7 +48,7 @@
         'ryantao/api-response' => array(
             'pretty_version' => 'dev-master',
             'version' => 'dev-master',
-            'reference' => '94a34250f625d8640fd20e5e5bae3109192201e9',
+            'reference' => 'a5b6883d7d045931cc02904087fa5d4063bd57d6',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

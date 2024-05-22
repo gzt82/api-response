@@ -19,7 +19,8 @@
   },
   "autoload": {
     "psr-4": {
-      "Ryantao\\": "src/"
+      "Ryantao\\": "src/",
+      "files": "src/install.php"
     }
   },
   "scripts": {
