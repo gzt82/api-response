@@ -25,6 +25,13 @@
       "ryantao\\api-response\\": "src/"
     }
   },
+  "extra": {
+    "think": {
+      "config": {
+        "rlog": "src/install/config/rlog.php"
+      }
+    }
+  },
   "authors": [
     {
       "name": "Ryan",
