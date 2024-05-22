@@ -8,7 +8,6 @@ foreach ($directories as $directory) {
     $sourceDir = $directory['source'];
     $targetDir = $directory['target'];
 
-    // 创建目标目录，如果不存在
     if (!file_exists($targetDir) && !mkdir($targetDir, 0755, true) && !is_dir($targetDir)) {
         throw new \RuntimeException(sprintf('Directory "%s" was not created', $targetDir));
     }
@@ -18,16 +17,25 @@ foreach ($directories as $directory) {
         RecursiveIteratorIterator::SELF_FIRST
     );
 
+    $allFilesExist = true;
     foreach ($iterator as $item) {
-        $targetPath = $targetDir . DIRECTORY_SEPARATOR . $iterator->getSubPathName();
+        if ($item->isFile()) {
+            $targetPath = $targetDir . DIRECTORY_SEPARATOR . $iterator->getSubPathName();
 
-        // 如果是目录，尝试创建，如果失败抛出异常
-        if ($item->isDir() && !file_exists($targetPath)) {
-            if (!mkdir($targetPath, 0755, true) && !is_dir($targetPath)) {
-                throw new \RuntimeException(sprintf('Directory "%s" was not created', $targetPath));
+            if (!file_exists($targetPath)) {
+                $allFilesExist = false;
+                break;
             }
-        } else {
-            // 如果是文件，直接复制
+        }
+    }
+
+    if ($allFilesExist) {
+        continue; // 跳过当前循环迭代
+    }
+
+    foreach ($iterator as $item) {
+        if ($item->isFile()) {
+            $targetPath = $targetDir . DIRECTORY_SEPARATOR . $iterator->getSubPathName();
             copy($item, $targetPath);
         }
     }
