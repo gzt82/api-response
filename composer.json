@@ -18,11 +18,18 @@
     "roave/security-advisories": "dev-latest"
   },
   "autoload": {
-    "files": [
-      "install.php"
-    ],
     "psr-4": {
-      "Ryantao\\": "src/"
+      "ryantao\\api-response\\": "src/"
+    }
+  },
+  "extra": {
+    "api-response": {
+      "config": {
+        "rlog": "config/rlog.php"
+      },
+      "library": {
+        "rlog": "app/Library/RLog.php"
+      }
     }
   },
   "authors": [
