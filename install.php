@@ -1,7 +1,7 @@
 <?php
 $directories = [
-    ['source' => __DIR__ . '/install/config', 'target' => __DIR__ . '/../../../config'],
-    ['source' => __DIR__ . './install/library', 'target' => __DIR__ . '../../../app\Library'],
+    ['source' => __DIR__ . '/install/config', 'target' => __DIR__ . '/../../../config', 'description' => '配置文件部署成功'],
+    ['source' => __DIR__ . './install/library', 'target' => __DIR__ . '../../../app\Library', 'description' => '类库部署成功'],
 ];
 
 foreach ($directories as $directory) {
@@ -28,5 +28,5 @@ foreach ($directories as $directory) {
         }
     }
 
-    echo "Files from '$sourceDir' copied to '$targetDir' successfully.\n";
+    echo $directory['destination'];
 }
