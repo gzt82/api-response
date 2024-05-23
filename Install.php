@@ -22,6 +22,7 @@ foreach ($directories as $directory) {
         if ($item->isFile()) {
             $targetPath = $targetDir . DIRECTORY_SEPARATOR . $iterator->getSubPathName();
 
+            echo "文件是否已安装：" . file_exists($targetPath);
             if (!file_exists($targetPath)) {
                 $allFilesExist = false;
                 break;
