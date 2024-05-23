@@ -24,18 +24,8 @@
   },
   "scripts": {
     "post-install-cmd": [
-      "cp -r src/install/Library %project_root%"
-    ],
-    "post-update-cmd": [
-      "cp -r src/install/Library %project_root%"
+      "ryantao\\Install::postInstall"
     ]
-  },
-  "extra": {
-    "think": {
-      "config": {
-        "rlog": "src/install/config/rlog.php"
-      }
-    }
   },
   "authors": [
     {
