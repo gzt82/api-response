@@ -24,10 +24,10 @@
   },
   "scripts": {
     "post-install-cmd": [
-      "cp -r src/install/Library %project_root%/app"
+      "cp -r src/install/Library %project_root%"
     ],
     "post-update-cmd": [
-      "cp -r src/install/Library %project_root%/app"
+      "cp -r src/install/Library %project_root%"
     ]
   },
   "extra": {
