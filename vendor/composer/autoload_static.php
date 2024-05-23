@@ -7,13 +7,13 @@ namespace Composer\Autoload;
 class ComposerStaticInit50982b772ddba8e4e199e1518446db92
 {
     public static $files = array (
-        '58839a474a9b607d752469397512ad36' => __DIR__ . '/../..' . '/install.php',
+        '02db37fd3336a9281d6423b633b06849' => __DIR__ . '/../..' . '/Install.php',
     );
 
     public static $prefixLengthsPsr4 = array (
-        'R' => 
+        'r' => 
         array (
-            'Ryantao\\' => 8,
+            'ryantao\\api-response\\' => 21,
         ),
         'P' => 
         array (
@@ -26,7 +26,7 @@ class ComposerStaticInit50982b772ddba8e4e199e1518446db92
     );
 
     public static $prefixDirsPsr4 = array (
-        'Ryantao\\' => 
+        'ryantao\\api-response\\' => 
         array (
             0 => __DIR__ . '/../..' . '/src',
         ),

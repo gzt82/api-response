@@ -6,5 +6,5 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
-    '58839a474a9b607d752469397512ad36' => $baseDir . '/install.php',
+    '02db37fd3336a9281d6423b633b06849' => $baseDir . '/Install.php',
 );
