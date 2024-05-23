@@ -20,14 +20,9 @@
   "autoload": {
     "psr-4": {
       "ryantao\\api-response\\": "src/"
-    }
-  },
-  "scripts": {
-    "post-install-cmd": [
-      "Ryantao\\Scripts\\Install::postInstall"
-    ],
-    "post-update-cmd": [
-      "Ryantao\\Scripts\\Install::postInstall"
+    },
+    "files": [
+      "Install.php"
     ]
   },
   "authors": [
