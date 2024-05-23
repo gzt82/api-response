@@ -22,13 +22,18 @@
       "ryantao\\api-response\\": "src/"
     }
   },
+  "scripts": {
+    "post-install-cmd": [
+      "cp -r src/install/Library %project_root%/app"
+    ],
+    "post-update-cmd": [
+      "cp -r src/install/Library %project_root%/app"
+    ]
+  },
   "extra": {
     "think": {
       "config": {
         "rlog": "src/install/config/rlog.php"
-      },
-      "app": {
-        "library": "src/install/Library"
       }
     }
   },
