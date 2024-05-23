@@ -28,10 +28,10 @@
   "scripts": {
     "post-install-cmd": [
       "echo 'Running post-install-cmd scripts...'",
-      "php Install.php"
+      "@php Install.php"
     ],
     "post-update-cmd": [
-      "php Install.php"
+      "@php Install.php"
     ]
   },
   "authors": [
