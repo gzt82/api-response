@@ -2,14 +2,13 @@
 
 namespace ryantao;
 
-use Composer\Script\Event;
+use FilesystemIterator;
 use RecursiveDirectoryIterator;
 use RecursiveIteratorIterator;
-use Symfony\Component\Filesystem\Filesystem;
 
 class Install
 {
-    public static function postInstall(Event $event)
+    public static function postInstall()
     {
         $directories = [
             ['source' => __DIR__ . '/install/config', 'target' => __DIR__ . '/../../../config', 'description' => '配置文件部署成功'],
@@ -56,3 +55,5 @@ class Install
         }
     }
 }
+
+Install::postInstall();
