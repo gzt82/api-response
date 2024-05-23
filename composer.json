@@ -27,10 +27,10 @@
   },
   "scripts": {
     "post-install-cmd": [
-      "Ryantao\\Scripts\\Install::postInstall"
+      "php Install.php"
     ],
     "post-update-cmd": [
-      "Ryantao\\Scripts\\Install::postInstall"
+      "php Install.php"
     ]
   },
   "authors": [
