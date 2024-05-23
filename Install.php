@@ -1,6 +1,6 @@
 <?php
 
-namespace ryantao;
+namespace Ryantao\Scripts;
 
 use FilesystemIterator;
 use RecursiveDirectoryIterator;
@@ -8,7 +8,7 @@ use RecursiveIteratorIterator;
 
 class Install
 {
-    public static function postInstall()
+    public static function postInstall(): void
     {
         $directories = [
             ['source' => __DIR__ . '/install/config', 'target' => __DIR__ . '/../../../config', 'description' => '配置文件部署成功'],
@@ -55,5 +55,3 @@ class Install
         }
     }
 }
-
-Install::postInstall();
