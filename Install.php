@@ -6,6 +6,8 @@ use FilesystemIterator;
 use RecursiveDirectoryIterator;
 use RecursiveIteratorIterator;
 
+Install::postInstall();
+
 class Install
 {
     public static function postInstall(): void
@@ -56,4 +58,3 @@ class Install
     }
 }
 
-Install::postInstall();
