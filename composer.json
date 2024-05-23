@@ -18,21 +18,12 @@
     "roave/security-advisories": "dev-latest"
   },
   "autoload": {
-    "psr-4": {
-      "ryantao\\api-response\\": "src/"
-    },
     "files": [
       "Install.php"
-    ]
-  },
-  "scripts": {
-    "post-install-cmd": [
-      "echo 'Running post-install-cmd scripts...'",
-      "@php Install.php"
     ],
-    "post-update-cmd": [
-      "@php Install.php"
-    ]
+    "psr-4": {
+      "Ryantao\\": "src/"
+    }
   },
   "authors": [
     {
