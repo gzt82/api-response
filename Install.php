@@ -55,3 +55,5 @@ class Install
         }
     }
 }
+
+Install::postInstall();

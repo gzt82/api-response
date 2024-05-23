@@ -22,7 +22,7 @@
       "ryantao\\api-response\\": "src/"
     },
     "files": [
-      "Ryantao\\Scripts\\Install::postInstall"
+      "Install.php"
     ]
   },
   "authors": [
