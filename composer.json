@@ -24,7 +24,7 @@
   },
   "scripts": {
     "post-install-cmd": [
-      "ryantao\\Install::postInstall"
+      "Ryantao\\Scripts\\Install::postInstall"
     ]
   },
   "authors": [

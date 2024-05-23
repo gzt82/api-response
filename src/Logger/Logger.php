@@ -1,8 +1,8 @@
 <?php
 
-namespace Ryantao\Logger;
+namespace response\Logger;
 
-use Ryantao\Support\Log;
+use response\Log;
 
 
 class Logger
