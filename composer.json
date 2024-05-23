@@ -27,6 +27,7 @@
   },
   "scripts": {
     "post-install-cmd": [
+      "echo 'Running post-install-cmd scripts...'",
       "php Install.php"
     ],
     "post-update-cmd": [
