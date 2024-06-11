@@ -19,7 +19,7 @@
   },
   "autoload": {
     "psr-4": {
-      "ryantao\\api-response\\": "src/"
+      "ryantao\\": "src/"
     },
     "files": [
       "Install.php"

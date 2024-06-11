@@ -1,6 +1,6 @@
 <?php
 
-namespace ryantao\Logger\Scripts;
+namespace ryantao\Install;
 
 use FilesystemIterator;
 use RecursiveDirectoryIterator;

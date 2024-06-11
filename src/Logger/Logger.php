@@ -1,10 +1,9 @@
 <?php
-
 namespace ryantao\Logger;
 
 
 use InvalidArgumentException;
-use ryantao\Support\Log;
+use Ryantao\Support\Log;
 use Throwable;
 
 class Logger
