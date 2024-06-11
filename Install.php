@@ -1,6 +1,6 @@
 <?php
 
-namespace response\Logger\Scripts;
+namespace ryantao\Logger\Scripts;
 
 use FilesystemIterator;
 use RecursiveDirectoryIterator;

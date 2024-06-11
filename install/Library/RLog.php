@@ -2,7 +2,7 @@
 
 namespace Library;
 
-use response\Logger\Logger;
+use ryantao\Logger\Logger;
 
 /**
  * @method static void test(string $title, $context = [], string $type = 'info')
