@@ -3,7 +3,7 @@ namespace ryantao\Logger;
 
 
 use InvalidArgumentException;
-use Ryantao\Support\Log;
+use ryantao\Support\Log;
 use Throwable;
 
 class Logger
