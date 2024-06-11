@@ -2,8 +2,10 @@
 
 namespace response\Logger;
 
-use response\Log;
 
+use InvalidArgumentException;
+use response\Support\Log;
+use Throwable;
 
 class Logger
 {
